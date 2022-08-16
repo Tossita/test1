@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>login</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <img src="https://th.bing.com/th/id/R.22289fbca1341735c47aff70eaaa11ef?rik=RR6ZMns%2fewgvXQ&riu=http%3a%2f%2fpm1.narvii.com%2f7320%2f16c688581d5029588f049977584fee71a68d5655r1-750-1100v2_00.jpg&ehk=qsRqHcVpIVFBMScB3m8sZfQUNQzpsG8xTmFILoIySKk%3d&risl=&pid=ImgRaw&r=0" />
+    <ion-card-header>
+      <ion-card-subtitle>Ingresar</ion-card-subtitle>
+      <ion-card-title>Cursito Stray Kids</ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+       <ion-item>
+         <ion-label>Usuario</ion-label>
+         <ion-input type = "text" placeholder="Ingrese usuario" [(ngModel)]="user"></ion-input>
+       </ion-item>
+       <ion-item>
+        <ion-label>Contraseña</ion-label>
+        <ion-input type ="password" placeholder="Ingrese contraseña" [(ngModel)]="password"> </ion-input>
+      </ion-item>
+      <ion-button (click)="login ()">Ingresar</ion-button>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
